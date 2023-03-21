@@ -1,0 +1,162 @@
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
+
+    :root {
+        --black: #1B1F3A;
+        --light-bg: #1B1F3A;
+        --white: #ffffff;
+        --azul-claro: #1273c7;
+    }
+
+    * {
+        font-family: "Rubik", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        text-decoration: none;
+        transition: 0.2s linear;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    body {
+        padding-top: 70px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    html {
+        font-size: 62.5%;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+        scroll-padding-top: 8rem;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+        /* height: 0.5rem;
+        width: 1rem; */
+    }
+
+    /* ::-webkit-scrollbar-thumb {
+        background-color: var(--azul-claro);
+        border-radius: 5rem;
+    } */
+
+    .movie {
+        display: none;
+    }
+
+    .cajon {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+        grid-auto-rows: 268px;
+        grid-gap: 10px;
+        margin: 1rem;
+    }
+
+    .cajon .movie {
+        text-align: center;
+    }
+
+    .cajon .movie a p {
+        color: var(--white);
+        font-size: 1.5rem;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+
+    .cajon .movie a img {
+        width: 160px;
+        height: 225px;
+    }
+
+    input {
+        background: linear-gradient(to bottom, rgba(50,50,50,0.8), rgba(50,50,50,0.8)), url("tu-imagen-de-fondo.jpg");
+        height: 2rem;
+        margin: 2rem;
+        width: auto;
+        border-radius: .5rem;
+        padding: 2rem 2rem 2rem 2rem;
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    @media (max-width: 900px) {
+        input {
+        height: 3rem;
+        margin: 2rem;
+        width: auto;
+        padding: 2rem 2rem 2rem 2rem;
+        font-size: 1.2rem;
+    }
+    }
+</style>
+
+
+<input type="text" id="search-box" placeholder="Buscar película...">
+
+<div class="cajon">
+    <div class="movie" data-title="wadafa">
+        <a href="#">
+            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx1689-hlkAI78WBahK.jpg"
+                alt="Byousoku 5 centímetros" />
+            <p>Byousoku 5 centímetros</p>
+        </a>
+    </div>
+    <div class="movie" data-title="Harry Potter">
+        <a href="#">
+            <img src="https://pics.filmaffinity.com/yip_man_4-628068540-mmed.jpg" alt="Ip Man 4" />
+            <p>Ip Man 4</p>
+        </a>
+    </div>
+    <div class="movie" data-title="Star Wars">
+        <a href="#">
+            <img src="https://pics.filmaffinity.com/missing_in_action-291426949-large.jpg" alt="Prisionero de guerra" />
+            <p>Prisionero de guerra</p>
+        </a>
+    </div>
+    <div class="movie" data-title="Star Wars">
+        <a href="#">
+            <img src="https://pics.filmaffinity.com/the_hating_game-428971484-mmed.jpg" alt="Cariño, cuánto te odio" />
+            <p>Cariño, cuánto te odio</p>
+        </a>
+    </div>
+    <div class="movie" data-title="Star Wars">
+        <a href="#">
+            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx116589-WSpNedJdAH3L.jpg"
+                alt="86: Eighty Six" />
+            <p>86: Eighty Six</p>
+        </a>
+    </div>
+</div>
+
+<script>
+    const searchBox = document.getElementById('search-box');
+    const movies = document.querySelectorAll('.movie');
+
+    searchBox.addEventListener('keyup', function (event) {
+        const searchTerm = event.target.value.toLowerCase();
+
+        if (searchTerm === '') {
+            movies.forEach(movie => {
+                movie.style.display = 'none';
+            });
+            return;
+        }
+
+        movies.forEach(movie => {
+            const title = movie.dataset.title.toLowerCase();
+            if (title.includes(searchTerm)) {
+                movie.style.display = 'block';
+            } else {
+                movie.style.display = 'none';
+            }
+        });
+    });
+
+</script>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelis999 v2.0</title>
+    <!-- swiper js -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- link de css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- link de box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- link de icono -->
+    <link rel="icon" href="assets/icon.svg">
+    <!-- cdn font awesone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <!-- header start -->
+    <div class="header">
+        <section class="flex">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <a href="#" class="logo">pelis <span>999</span></a>
+            <nav class="navbar">
+                <a href="#"><i class="fas fa-house"></i> inicio</a>
+                <a href="#"><i class="fas fa-film"></i> películas</a>
+                <a href="#"><i class="fas fa-desktop"></i> series</a>
+                <!-- <a href="#">géneros</a> -->
+                <a href="#"><img class="img-marvel" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/320px-Marvel_Logo.svg.png" alt="Marvel_Logo"></a>
+                <a href="#"><img class="img-dc" src="https://tbmdcnd.xyz/flix/imgs/dc-comics-logo-24x24.png" alt="DC_Comics_logo"></a>
+            </nav>
+            <div class="fas fa-search" id="boton" onclick="mostrarCaja()"></div>
+        </section>
+    </div>
+    <!-- header end -->
+
+    <!-- sección buscador start -->
+    <div id="caja" class="caja-de-iframe">
+        <iframe src="busqueda/busqueda.html" frameborder="0"></iframe>
+    </div>
+    <!-- sección buscador end -->
+
+    <!-- sección del slider start -->
+    <section id="courses" class="courses">
+		<h1 class="heading">películas <span>nuevas</span></h1>
+
+		<div class="swiper course-slider">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx140596-RP415uHlXSVr.jpg"
+						alt="Nagatoro-san 2nd Attack" />
+					<a href="#">
+						<h3>Nagatoro-san 2nd Attack</h3>
+					</a>
+				</div>
+				<div class="swiper-slide slide">
+					<img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx126529-AwE5AAdhuls1.png"
+						alt="" />
+					<a href="#">
+						<h3>Kyokou Suiri Temporada 2</h3>
+					</a>
+				</div>
+				<div class="swiper-slide slide">
+					<img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx131518-oOG9nbR5vPQ5.jpg"
+						alt="" />
+					<a href="#">
+						<h3>Dr. Stone: nuevo mundo</h3>
+					</a>
+				</div>
+				<div class="swiper-slide slide">
+					<img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx145064-isVePKcTuMlu.jpg"
+						alt="" />
+					<a href="#">
+						<h3>Jujutsu Kaisen 2ª Temporada</h3>
+					</a>
+				</div>
+				<div class="swiper-slide slide">
+					<img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx151806-IAMi2ctI5xJI.jpg"
+						alt="" />
+					<a href="#">
+						<h3>Tomo-chan wa Onnanoko!</h3>
+					</a>
+				</div>
+				<div class="swiper-slide slide">
+					<img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx136430-f8Iza5GEynRW.jpg"
+						alt="" />
+					<a href="#">
+						<h3>VINLAND SAGA TEMPORADA 2</h3>
+					</a>
+				</div>
+				<div class="swiper-slide slide">
+					<img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx146323-vyj1w1VRgDN7.png"
+						alt="Spy Kyoushitsu" />
+					<a href="#">
+						<h3>Spy Kyoushitsu</h3>
+					</a>
+				</div>
+				<div class="swiper-slide slide">
+					<img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx141208-6vOLiiMfuBGx.jpg"
+						alt="Tonikaku Kawaii Season 2" />
+					<a href="#">
+						<h3>Tonikaku Kawaii Season 2</h3>
+					</a>
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+	</section>
+    <!-- sección del slider end -->
+
+    
+    <!-- swiper js -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- link de JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
