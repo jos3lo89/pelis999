@@ -333,7 +333,7 @@ section {
 
 .contenedor-txt {
     height: 150px;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     margin-bottom: 1.5rem;
     padding: 0 2rem 0 0;
 }
@@ -344,6 +344,13 @@ section {
     padding: 0;
     font-size: 16px;
     line-height: 1.5;
+
+
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 @media (max-width: 768px) {
@@ -351,4 +358,5 @@ section {
         margin-left: 1.5rem;
     }
 }
+
 /* swiper grande end */
