@@ -750,6 +750,9 @@ section {
     .cajon .pelis a img {
         width: 154px;
         height: 220px;
+        filter: brightness(70%);
+        -webkit-filter: brightness(70%);
+        -moz-filter: brightness(70%);
     }
 }
 
