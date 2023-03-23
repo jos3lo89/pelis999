@@ -1,48 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pelis999 v2.0</title>
-    <!-- swiper js -->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Pelis999 v2.0</title>
+	<!-- swiper js -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <!-- link de css -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- link de box icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- link de icono -->
-    <link rel="icon" href="assets/icon.svg">
-    <!-- cdn font awesone -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+	<!-- link de css -->
+	<link rel="stylesheet" href="css/style.css" />
+	<!-- link de box icons -->
+	<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+	<!-- link de icono -->
+	<link rel="icon" href="assets/icon.svg" />
+	<!-- cdn font awesone -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
 </head>
+
 <body>
-    <!-- header start -->
-    <div class="header">
-        <section class="flex">
-            <div class="fas fa-bars" id="menu-btn"></div>
-            <a href="#" class="logo">pelis <span>999</span></a>
-            <nav class="navbar">
-                <a href="#"><i class="fas fa-house"></i> inicio</a>
-                <a href="#"><i class="fas fa-film"></i> películas</a>
-                <a href="#"><i class="fas fa-desktop"></i> series</a>
-                <!-- <a href="#">géneros</a> -->
-                <a href="#"><img class="img-marvel" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/320px-Marvel_Logo.svg.png" alt="Marvel_Logo"></a>
-                <a href="#"><img class="img-dc" src="https://tbmdcnd.xyz/flix/imgs/dc-comics-logo-24x24.png" alt="DC_Comics_logo"></a>
-            </nav>
-            <div class="fas fa-search" id="boton" onclick="mostrarCaja()"></div>
-        </section>
-    </div>
-    <!-- header end -->
+	<!-- header start -->
+	<div class="header">
+		<section class="flex">
+			<div class="fas fa-bars" id="menu-btn"></div>
+			<a href="#" class="logo">pelis <span>999</span></a>
+			<nav class="navbar">
+				<a href="#"><i class="fas fa-house"></i> inicio</a>
+				<a href="#"><i class="fas fa-film"></i> películas</a>
+				<a href="#"><i class="fas fa-desktop"></i> series</a>
+				<!-- <a href="#">géneros</a> -->
+				<a href="#"><img class="img-marvel"
+						src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/320px-Marvel_Logo.svg.png"
+						alt="Marvel_Logo" /></a>
+				<a href="#"><img class="img-dc" src="https://tbmdcnd.xyz/flix/imgs/dc-comics-logo-24x24.png"
+						alt="DC_Comics_logo" /></a>
+			</nav>
+			<div class="fas fa-search" id="boton" onclick="mostrarCaja()"></div>
+		</section>
+	</div>
+	<!-- header end -->
 
-    <!-- sección buscador start -->
-    <div id="caja" class="caja-de-iframe">
-        <iframe src="busqueda/busqueda.html" frameborder="0"></iframe>
-    </div>
-    <!-- sección buscador end -->
+	<!-- sección buscador start -->
+	<div id="caja" class="caja-de-iframe">
+		<iframe src="busqueda/busqueda.html" frameborder="0"></iframe>
+	</div>
+	<!-- sección buscador end -->
 
-    <!-- sección del slider start -->
-    <section id="courses" class="courses">
+	<!-- sección slider grande start -->
+	<div class="swiper swiperGrande">
+		<div class="swiper-wrapper swiper-wrapper-jl">
+			<div class="swiper-slide swiper-slide-jl jl-slide-1">
+				<img src="https://img.uhdpaper.com/wallpaper/shazam-fury-of-gods-poster-shazam-982@1@j"
+					alt=" shazam la furia de los dioses" />
+				<div class="contenido">
+					<h2>¡Shazam! La furia de los dioses</h2>
+					<p>130 min.</p>
+					<p>calidad: <span>cam</span></p>
+					<div class="contenedor-txt">
+						<p class="txt-caja2">
+							<span>Sinopsis</span> <br />
+							Billy Batson y sus compañeros adoptados han recibido los poderes
+							de los dioses pero aún están aprendiendo a compaginar sus vidas
+							de adolescentes con sus alter-egos superheróicos. Pero cuando
+							las Hijas de Atlas, un vengativo trío de antiguos dioses, llegan
+							a la Tierra en busca de la magia que les robaron hace mucho
+							tiempo, Billy -alias Shazam- y su familia se ven envueltos en
+							una batalla por sus superpoderes, sus vidas y el destino de su
+							mundo.
+						</p>
+					</div>
+					<a class="link-ver" href="#">Ver película</a>
+				</div>
+			</div>
+			<div class="swiper-slide swiper-slide-jl jl-slide-2">
+				<img src="https://image.tmdb.org/t/p/w1280/ae4xZiU7IeFVrvXxm2GjdcTrBm.jpg" alt="Scream VI" />
+				<div class="contenido">
+					<h2>Scream VI</h2>
+					<p>123 min.</p>
+					<p>calidad: <span>cam</span></p>
+					<div class="contenedor-txt">
+						<p class="txt-caja2">
+							<span>Sinopsis</span> <br />
+							Tras los últimos asesinatos de Ghostface, los cuatro supervivientes abandonan Woodsboro para
+							dar comienzo a un nuevo capítulo en la ciudad de Nueva York.
+						</p>
+					</div>
+					<a class="link-ver" href="#">Ver película</a>
+				</div>
+			</div>
+			<div class="swiper-slide swiper-slide-jl jl-slide-3">
+				<img src="https://img.uhdpaper.com/wallpaper/ant-man-and-the-wasp-quantumania-movie-cast-675@1@j"
+					alt="Ant-Man y la Avispa: Quantumanía" />
+				<div class="contenido">
+					<h2>Ant-Man y la Avispa: Quantumanía</h2>
+					<p>125 min.</p>
+					<p>calidad: <span>cam</span></p>
+					<div class="contenedor-txt">
+						<p class="txt-caja2">
+							<span>Sinopsis</span> <br />
+							Scott Lang y Hope Van Dyne, junto con Hank Pym y Janet Van Dyne, exploran el Reino Cuántico,
+							donde interactúan con extrañas criaturas y se embarcan en una aventura que va más allá de
+							los límites de lo que creían posible.
+						</p>
+					</div>
+					<a class="link-ver" href="#">Ver película</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- sección slider grande end -->
+
+	<!-- sección del slider start -->
+	<section id="courses" class="courses">
 		<h1 class="heading">películas <span>nuevas</span></h1>
 
 		<div class="swiper course-slider">
@@ -107,12 +176,12 @@
 			<div class="swiper-pagination"></div>
 		</div>
 	</section>
-    <!-- sección del slider end -->
+	<!-- sección del slider end -->
 
-    
-    <!-- swiper js -->
+	<!-- swiper js -->
 	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <!-- link de JavaScript -->
-    <script src="js/script.js"></script>
+	<!-- link de JavaScript -->
+	<script src="js/script.js"></script>
 </body>
+
 </html>
