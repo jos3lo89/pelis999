@@ -58,6 +58,9 @@ var swiper = new Swiper(".course-slider", {
 		1024: {
 			slidesPerView: 4,
 		},
+		1400: {
+			slidesPerView: 5,
+		},
 	},
 	keyboard: {
 		enabled: true,
@@ -77,5 +80,44 @@ var swiper = new Swiper(".swiperGrande", {
 		delay: 5000, //auto-play cada 5 sec
 		pauseOnMouseEnter: true, //pasa maus y pausa slides
 		disableOnInteraction: false, //vuelva a lo mismo
+	},
+});
+
+
+
+// swiper de top 10 pelis999
+var swiper = new Swiper(".swiperTop10", {
+	loop: true,
+	slidesPerView: 1,
+	spaceBetween: 10,
+	navigation: {
+		nextEl: ".swiperSiguiente",
+		prevEl: ".swiperAtras",
+	},
+	breakpoints: {
+		280: {
+			slidesPerView: 1,
+			spaceBetween: 10,
+		},
+		320: {
+			slidesPerView: 2,
+			spaceBetween: 10,
+		},
+		510: {
+			slidesPerView: 3,
+			spaceBetween: 10,
+		},
+		758: {
+			slidesPerView: 4,
+			spaceBetween: 15,
+		},
+		900: {
+			slidesPerView: 5,
+			spaceBetween: 20,
+		},
+		1400: {
+			slidesPerView: 6,
+			spaceBetween: 20,
+		},
 	},
 });

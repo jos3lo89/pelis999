@@ -408,3 +408,349 @@ section {
 }
 
 /* swiper grande end */
+
+
+/* sección de top 10 en pelis999 start */
+.title-top-10 {
+    padding: 2rem;
+    margin: 3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+}
+
+.title-top-10 p {
+    font-size: 3rem;
+    color: var(--white);
+}
+
+@media (max-width: 768px) {
+    .title-top-10 p {
+        font-size: 2rem;
+        color: var(--white);
+    }
+
+    .title-top-10 p i {
+        font-size: 2rem;
+        margin-right: 0;
+    }
+}
+
+.title-top-10 p i {
+    font-size: 2.5rem;
+    color: var(--azul-claro);
+    margin-right: 1rem;
+}
+
+.title-top-10 p span {
+    color: #1273c7;
+}
+
+/* swiper section start */
+.swiperTop10 {
+    width: auto;
+    height: auto;
+    margin-bottom: 3rem;
+    /* background-color: cadetblue; */
+}
+
+.movieSlide {
+    /* background: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+}
+
+/* stuilo del tutu */
+.movies-box {
+    width: 100%;
+    height: auto;
+}
+
+.imgContain {
+    position: relative;
+    width: 200px;
+    height: 265px;
+}
+
+.imgContain .imgTop10 {
+    width: 100%;
+    height: 100%;
+}
+
+.imgContain .box-txt {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 265px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* padding: 14px; */
+    background: linear-gradient(8deg,
+
+            hsla(0, 0%, 0%, 0.7) 14%,
+            hsla(0, 0%, 0%, 0.1) 84%);
+    /* background-color: chocolate; */
+    overflow: hidden;
+    gap: .3rem;
+}
+
+@media (max-width: 768px) {
+    .imgContain {
+        width: 180px;
+        height: 250px;
+    }
+
+    .imgContain .box-txt {
+        width: 180px;
+        height: 250px;
+    }
+
+    .movieSlide {
+        /* background: #fff; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 180px;
+    }
+}
+
+@media (max-width: 400px) {
+    .imgContain {
+        width: 160px;
+        height: 230px;
+    }
+
+    .imgContain .box-txt {
+        width: 160px;
+        height: 230px;
+    }
+
+    .movieSlide {
+        /* background: #fff; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 180160pxpx;
+    }
+}
+
+.movie-title {
+    font-size: 2rem;
+    color: var(--white);
+    margin-left: 1rem;
+}
+
+.movie-type {
+    font-size: 1.5rem;
+    color: var(--white);
+    margin-left: 1rem;
+}
+
+.movie-play-btn {
+    /* background-color: #1273c7; */
+    width: 7rem;
+
+}
+
+.movie-play-btn i {
+    /* width: 100%;
+    height: 100%; */
+    font-size: 3rem;
+    color: #fcb900;
+    border: 2px solid #fcb900;
+    border-radius: 50%;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.movie-play-btn i:hover {
+    background-color: #fcb900;
+    color: #fff;
+}
+
+/* swiper section end */
+
+/* secicion del los botones del swiper nextPrev start */
+
+.title-top-10 {
+    margin-top: 6rem;
+    /* border: 2px solid var(--azul-claro); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-top-10 .cajaNextPrev i {
+    font-size: 3rem;
+    color: #1273c7;
+    cursor: pointer;
+    margin-left: 2rem;
+}
+
+.title-top-10 .cajaNextPrev i:hover {
+    transform: scale(1.2);
+}
+
+/* secicion del los botones del swiper nextPrev end */
+/* sección de top 10 en pelis999 end */
+
+
+
+/* ver peliculas start */
+.title-top-10 p a {
+    font-size: 1.5rem;
+    color: var(--white);
+    background-color: var(--azul-claro);
+    padding: .2rem;
+    border-radius: 1rem;
+}
+
+/* .verPeliculaContain {
+    background-color: #fcb900;
+    max-width: 1600px;
+    margin: 0 auto;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    justify-content: center;
+}
+
+.imgContain33 {
+    position: relative;
+    width: 200px;
+    height: 265px;
+    min-width: 180px;
+    min-height: 250px;
+}
+
+.imgContain33 .imgTop1033 {
+    width: 100%;
+    height: 100%;
+}
+
+.imgContain33 .box-txt33 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 265px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: linear-gradient(8deg,
+
+            hsla(0, 0%, 0%, 0.7) 14%,
+            hsla(0, 0%, 0%, 0.1) 84%);
+    overflow: hidden;
+    gap: .3rem;
+}
+
+@media (max-width: 768px) {
+    .imgContain33 {
+        width: 180px;
+        height: 250px;
+    }
+
+    .imgContain33 .box-txt33 {
+        width: 180px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 400px) {
+    .imgContain33 {
+        width: 160px;
+        height: 230px;
+    }
+
+    .imgContain33 .box-txt {
+        width: 160px;
+        height: 230px;
+    }
+}
+
+.movie-title33 {
+    font-size: 2rem;
+    color: var(--white);
+    margin-left: 1rem;
+}
+
+.movie-type33 {
+    font-size: 1.5rem;
+    color: var(--white);
+    margin-left: 1rem;
+}
+
+.movie-play-btn33 {
+    width: 7rem;
+
+}
+
+.movie-play-btn33 i {
+    font-size: 3rem;
+    color: #fcb900;
+    border: 2px solid #fcb900;
+    border-radius: 50%;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.movie-play-btn33 i:hover {
+    background-color: #fcb900;
+    color: #fff;
+} */
+
+.cajon {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+            minmax(180px, 1fr));
+    /* crea columnas de 200px de ancho y se ajustan según el ancho disponible */
+    grid-auto-rows: 268px;
+    /* establece una altura fija de 300px para cada fila */
+    grid-gap: 10px;
+    /* opcional: agrega un espacio de 10px entre los items */
+}
+
+.cajon .pelis {
+    text-align: center;
+    /* background-color: #fcb900; */
+}
+
+.cajon .pelis a p {
+    color: var(--white);
+    font-size: 1.5rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    /* max-width: 164px;
+    text-align: center; */
+}
+
+.cajon .pelis a img {
+    width: 164px;
+    height: 230px;
+}
+
+@media (max-width: 768px) {
+    .cajon {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        grid-auto-rows: 250px;
+        grid-gap: 10px;
+    }
+
+    .cajon .pelis a img {
+        width: 154px;
+        height: 220px;
+    }
+}
+
+/* ver peliculas end */
