@@ -115,9 +115,9 @@ var swiper = new Swiper(".swiperTop10", {
 			slidesPerView: 5,
 			spaceBetween: 20,
 		},
-		1400: {
-			slidesPerView: 6,
-			spaceBetween: 20,
-		},
+		// 1400: {
+		// 	slidesPerView: 6,
+		// 	spaceBetween: 20,
+		// },
 	},
 });
