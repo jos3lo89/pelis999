@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
 
 :root {
-    --black: #1B1F3A;
+    /* --black: #1B1F3A; */
+    --black: #121b24;
     --light-bg: #1B1F3A;
     --white: #ffffff;
     --azul-claro: #1273c7;
@@ -157,7 +158,7 @@ section {
         left: 0;
         right: 0;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-        background-color: var(--light-bg);
+        background-color: var(--black);
         border-bottom: 0.3rem solid var(--azul-claro);
         border-top: 0.3rem solid var(--azul-claro);
 
