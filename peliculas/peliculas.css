@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
+
+:root {
+    /* --black: #1B1F3A; */
+    --black: #121b24;
+    --light-bg: #1B1F3A;
+    --white: #ffffff;
+    --azul-claro: #1273c7;
+}
+
+* {
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: 0.2s linear;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+}
+
+/* *::selection {
+	background-color:rgba(0, 0, 0, 0);
+	color: rgba(0, 0, 0, 0);
+} */
+
+::-webkit-scrollbar {
+    height: 0.5rem;
+    width: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--azul-claro);
+    border-radius: 5rem;
+}
+
+body {
+    background-color: var(--black);
+    -webkit-user-select: none;
+    /* para navegadores basados en WebKit, como Google Chrome y Safari */
+    -moz-user-select: none;
+    /* para navegadores basados en Gecko, como Firefox */
+    -ms-user-select: none;
+    /* para navegadores basados en Trident, como Internet Explorer y Microsoft Edge */
+    user-select: none;
+    /* para navegadores que soportan la especificación CSS3 */
+}
+
+section {
+    max-width: 1650px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* header start */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    text-transform: uppercase;
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgb(34, 146, 202)); */
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+}
+
+.header .flex {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header .flex .logo {
+    font-size: 2.5rem;
+    color: var(--white);
+}
+
+.header .flex .logo span {
+    color: var(--azul-claro);
+}
+
+.header .flex .navbar {
+    cursor: default;
+}
+
+.header .flex .navbar a {
+    color: var(--white);
+    margin-left: 2rem;
+    font-size: 2rem;
+}
+
+.header .flex .navbar a i {
+    color: var(--azul-claro);
+}
+
+.header .flex .navbar a .img-marvel {
+    width: 50px;
+    height: auto;
+}
+
+.header .flex .navbar a .img-dc {
+    width: 25px;
+    height: auto;
+}
+
+#menu-btn {
+    display: none;
+    cursor: pointer;
+    color: var(--white);
+    font-size: 2.5rem;
+    width: 20px;
+    height: 20px;
+}
+
+#boton {
+    cursor: pointer;
+    color: var(--white);
+    font-size: 2.5rem;
+    width: 22px;
+    height: 22px;
+}
+
+#boton.fa-times {
+    transform: rotate(-180deg);
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 900px) {
+    #menu-btn {
+        display: inline-block;
+    }
+
+    #menu-btn.fa-times {
+        transform: rotate(180deg);
+    }
+
+    .header .flex .navbar a {
+        margin-left: 0rem;
+    }
+
+    .header .flex .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        background-color: var(--black);
+        border-bottom: 0.3rem solid var(--azul-claro);
+        border-top: 0.3rem solid var(--azul-claro);
+
+    }
+
+    .header .flex .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .header .flex .navbar a {
+        display: block;
+        margin: 2rem;
+    }
+}
+
+@media (max-width: 540px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+/* header end */
+
+
+/* sección busqueda start */
+#caja {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 99;
+}
+
+.caja-de-iframe iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* sección busqueda end */
+
+.verPelicula {
+    padding-top: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* seccion de datos img titulo generos y sinopsis start */
+.caja-datos {
+	display: flex;
+	width: 100%;
+	height: auto;
+	padding: 2rem;
+}
+.caja-datos .caja1 img {
+	width: 200px;
+	height: auto;
+}
+
+.caja-datos .caja2 {
+	margin: 0 2rem;
+	max-width: 600px;
+}
+
+.caja-datos .caja2 h2 {
+	font-size: 2rem;
+	color: var(--azul-claro);
+}
+
+.caja-datos .caja2 .contenedor-txt {
+	height: 150px; /* Altura del contenedor */
+	overflow-y: scroll; /* Activar scroll vertical */
+	margin-bottom: 1rem;
+	padding: 0 1rem 0 0;
+}
+
+.caja-datos .caja2 .contenedor-txt .txt-caja2 {
+	height: auto; /* Altura automática del texto */
+	margin: 0; /* Eliminar margen */
+	padding: 0; /* Eliminar padding */
+	font-size: 16px; /* Tamaño de fuente */
+	line-height: 1.5; /* Espaciado entre líneas */
+}
+
+.caja-datos .caja2 .contenedor-txt::-webkit-scrollbar {
+	width: 1rem; /* Ancho de la barra de desplazamiento */
+}
+
+.caja-datos .caja2 .contenedor-txt::-webkit-scrollbar-track {
+	background-color: var(--black); /* Color de fondo de la barra */
+}
+
+.caja-datos .caja2 .contenedor-txt::-webkit-scrollbar-thumb {
+	background-color: var(--azul-claro); /* Color del thumb */
+	border-radius: 10px; /* Radio de borde del thumb */
+}
+
+.caja-datos .caja2 .contenedor-txt p {
+	color: var(--white);
+}
+
+.caja-datos .caja2 .contenedor-txt p span {
+	font-size: 1.9rem;
+    color: #fcb900;
+}
+
+.caja-datos .caja2 small {
+	font-size: 14px;
+	color: var(--azul-claro);
+}
+
+.caja-datos .caja2 small p {
+	color: #fcb900;
+}
+
+.caja-datos .caja3 {
+	display: inline-block;
+	min-width: 270px;
+}
+
+.caja-datos .caja3 p {
+	font-size: 14px;
+	color: var(--white);
+}
+
+.caja-datos .caja3 p span {
+	color: #fcb900;
+}
+
+.caja-datos .caja3 i {
+	color: yellow;
+}
+
+@media (max-width: 999px) {
+	.caja-datos {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.caja-datos .caja2 {
+		margin: 1rem 0;
+	}
+
+	.caja-datos .caja2 h2 {
+		text-align: center;
+		margin-top: 1rem;
+	}
+
+	.caja-datos .caja3 {
+		margin-top: 1rem;
+	}
+}
+
+/* datos peli end */
+
+
+/* iframe peli start */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.chapter-list-container {
+    width: 100%;
+}
+
+.chapter-list-container h3 {
+    font-size: 2rem;
+    color: var(--azul-claro);
+    margin-bottom: 2rem;
+}
+
+.chapter-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.chapter-list li {
+    padding: 1rem;
+    cursor: pointer;
+    background-color: #023047;
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+.chapter-list li.active {
+    background-color: #fcb900;
+    border: none;
+}
+
+.chapter-list li:hover {
+    background-color: #219ebc;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* iframe peli end */
+
+.verPeliIframe {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* footer start */
+.footer {
+    text-align: center;
+}
+
+.footer p {
+    color: var(--white);
+    font-size: 1.5rem;
+
+}
+
+.footer p span {
+    color: var(--azul-claro);
+    font-size: 1.5rem;
+    
+}
+/* footer end */
