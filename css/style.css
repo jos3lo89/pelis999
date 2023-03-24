@@ -610,150 +610,117 @@ section {
     border-radius: 1rem;
 }
 
-/* .verPeliculaContain {
-    background-color: #fcb900;
-    max-width: 1600px;
-    margin: 0 auto;
-    height: auto;
-
+.cajon {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-    justify-content: center;
+    grid-auto-rows: 310px;
+    gap: 10px;
 }
 
-.imgContain33 {
+.pelis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgContainer {
     position: relative;
     width: 200px;
-    height: 265px;
-    min-width: 180px;
-    min-height: 250px;
+    height: 310px;
 }
 
-.imgContain33 .imgTop1033 {
+.imgContainer img {
+    position: absolute;
     width: 100%;
     height: 100%;
 }
 
-.imgContain33 .box-txt33 {
+.imgContainer .text-Box {
+    background-color: var(--black);
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 200px;
-    height: 265px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.imgContainer:hover .text-Box {
+    opacity: 1;
+    transform: scale(1.05);
+    z-index: 4;
+}
+
+@media screen and (max-width: 440px) {
+    .cajon {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 245px;
+    }
+
+    .imgContainer {
+        /* background-color: cadetblue; */
+        position: relative;
+        width: 160px;
+        height: 245px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .cajon {
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 245px;
+    }
+}
+
+/* text-box style */
+.text-Box {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    background: linear-gradient(8deg,
-
-            hsla(0, 0%, 0%, 0.7) 14%,
-            hsla(0, 0%, 0%, 0.1) 84%);
-    overflow: hidden;
-    gap: .3rem;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 2rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
 }
 
-@media (max-width: 768px) {
-    .imgContain33 {
-        width: 180px;
-        height: 250px;
-    }
-
-    .imgContain33 .box-txt33 {
-        width: 180px;
-        height: 250px;
-    }
-}
-
-@media (max-width: 400px) {
-    .imgContain33 {
-        width: 160px;
-        height: 230px;
-    }
-
-    .imgContain33 .box-txt {
-        width: 160px;
-        height: 230px;
-    }
-}
-
-.movie-title33 {
-    font-size: 2rem;
+.text-Box .movieTitle {
     color: var(--white);
-    margin-left: 1rem;
+    font-weight: 400;
+    font-size: 1.7rem;
 }
 
-.movie-type33 {
-    font-size: 1.5rem;
-    color: var(--white);
-    margin-left: 1rem;
-}
-
-.movie-play-btn33 {
-    width: 7rem;
-
-}
-
-.movie-play-btn33 i {
-    font-size: 3rem;
+.text-Box p {
     color: #fcb900;
-    border: 2px solid #fcb900;
-    border-radius: 50%;
+    font-size: 1rem;
+    /* margin-bottom: 2rem; */
+}
+
+.text-Box p span {
+    padding: .5rem;
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+.text-Box a {
+    background-color: var(--azul-claro);
     padding: 1rem;
-    margin: 1rem;
-}
-
-.movie-play-btn33 i:hover {
-    background-color: #fcb900;
-    color: #fff;
-} */
-
-.cajon {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,
-            minmax(180px, 1fr));
-    /* crea columnas de 200px de ancho y se ajustan según el ancho disponible */
-    grid-auto-rows: 268px;
-    /* establece una altura fija de 300px para cada fila */
-    grid-gap: 10px;
-    /* opcional: agrega un espacio de 10px entre los items */
-}
-
-.cajon .pelis {
-    text-align: center;
-    /* background-color: #fcb900; */
-}
-
-.cajon .pelis a p {
+    /* superior derecha inferior izquierda */
+    border-radius: 1rem;
     color: var(--white);
     font-size: 1.5rem;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    /* max-width: 164px;
-    text-align: center; */
 }
 
-.cajon .pelis a img {
-    width: 164px;
-    height: 230px;
-}
-
-@media (max-width: 768px) {
-    .cajon {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-        grid-auto-rows: 250px;
-        grid-gap: 10px;
-    }
-
-    .cajon .pelis a img {
-        width: 154px;
-        height: 220px;
-        filter: brightness(70%);
-        -webkit-filter: brightness(70%);
-        -moz-filter: brightness(70%);
-    }
+.text-Box a i {
+    font-size: 1.5rem;
+    color: #fcb900;
 }
 
 /* ver peliculas end */
+
+
+/* footer start */
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: var(--black);
+    margin-top: 20px;
+}
+/* footer end */

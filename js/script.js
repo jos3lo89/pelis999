@@ -62,9 +62,9 @@ var swiper = new Swiper(".course-slider", {
 			slidesPerView: 5,
 		},
 	},
-	keyboard: {
-		enabled: true,
-	},
+	// keyboard: {
+	// 	enabled: true,
+	// },
 
 	autoplay: {
 		delay: 5000, //auto-play cada 5 sec
@@ -80,6 +80,9 @@ var swiper = new Swiper(".swiperGrande", {
 		delay: 5000, //auto-play cada 5 sec
 		pauseOnMouseEnter: true, //pasa maus y pausa slides
 		disableOnInteraction: false, //vuelva a lo mismo
+	},
+	keyboard: {
+		enabled: true,
 	},
 });
 
@@ -99,25 +102,35 @@ var swiper = new Swiper(".swiperTop10", {
 			slidesPerView: 1,
 			spaceBetween: 10,
 		},
-		320: {
+		370: {
 			slidesPerView: 2,
 			spaceBetween: 10,
 		},
-		510: {
+		572: {
 			slidesPerView: 3,
 			spaceBetween: 10,
 		},
-		758: {
+		858: {
 			slidesPerView: 4,
 			spaceBetween: 15,
 		},
-		900: {
+		1105: {
 			slidesPerView: 5,
 			spaceBetween: 20,
 		},
-		// 1400: {
-		// 	slidesPerView: 6,
-		// 	spaceBetween: 20,
-		// },
+		1400: {
+			slidesPerView: 6,
+			spaceBetween: 20,
+		},
+		1800: {
+			slidesPerView: 7,
+			spaceBetween: 20,
+		},
+	},
+
+	autoplay: {
+		delay: 7000,
+		pauseOnMouseEnter: true,
+		disableOnInteraction: false,
 	},
 });
