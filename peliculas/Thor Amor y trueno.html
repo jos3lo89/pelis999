@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pelis999</title>
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- link de css -->
+    <link rel="stylesheet" href="peliculas.css" />
+    <!-- link de box icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!-- link de icono -->
+    <link rel="icon" href="../assets/icon.svg" />
+    <!-- cdn font awesone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+</head>
+
+<body>
+    <!-- header start -->
+    <div class="header">
+        <section class="flex">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <a href="../index.html" class="logo">pelis <span>999</span></a>
+            <nav class="navbar">
+                <a href="../index.html"><i class="fas fa-house"></i> inicio</a>
+                <a href="#"><i class="fas fa-film"></i> películas</a>
+                <a href="#"><i class="fas fa-desktop"></i> series</a>
+                <!-- <a href="#">géneros</a> -->
+                <a href="#"><img class="img-marvel"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/320px-Marvel_Logo.svg.png"
+                        alt="Marvel_Logo" /></a>
+                <a href="#"><img class="img-dc" src="https://tbmdcnd.xyz/flix/imgs/dc-comics-logo-24x24.png"
+                        alt="DC_Comics_logo" /></a>
+            </nav>
+            <div class="fas fa-search" id="boton" onclick="mostrarCaja()"></div>
+        </section>
+    </div>
+    <!-- header end -->
+
+    <!-- sección buscador start -->
+    <div id="caja" class="caja-de-iframe">
+        <iframe src="../busqueda/busqueda.html" frameborder="0"></iframe>
+    </div>
+    <!-- sección buscador end -->
+
+
+    <!-- ver pelicula iframe start -->
+    <section class="verPelicula">
+        <div class="caja-datos">
+            <div class="caja1">
+                <img src="https://pics.filmaffinity.com/thor_love_and_thunder-566116133-large.jpg"
+                    alt="Thor: Amor y trueno" />
+            </div>
+            <div class="caja2">
+                <h2>Thor: Amor y trueno</h2>
+                <div class="contenedor-txt">
+                    <p class="txt-caja2">
+                        <span>Sinopsis</span> <br />
+                        TEl Dios del Trueno (Chris Hemsworth) emprende un viaje que no se parece en nada a lo que se ha
+                        enfrentado hasta ahora: una búsqueda de la paz interior. Pero el retiro de Thor se ve
+                        interrumpido por un asesino galáctico conocido como Gorr el Carnicero de Dioses (Christian
+                        Bale), que busca la extinción de los dioses. Para hacer frente a la amenaza, Thor solicita la
+                        ayuda del Rey Valkiria (Tessa Thompson), de Korg (Taika Waititi) y de su ex novia Jane Foster
+                        (Natalie Portman) que, para sorpresa de Thor, empuña inexplicablemente su martillo mágico,
+                        Mjolnir, como la Poderosa Thor. Juntos, se embarcan en una aventura cósmica en la que tendrán
+                        que descubrir el misterio de la venganza del Carnicero de Dioses y detenerlo antes de que sea
+                        demasiado tarde.
+                    </p>
+                </div>
+                <small>Fecha de estreno:
+                    <p>6 de julio de 2022</p>
+                </small>
+            </div>
+            <div class="caja3">
+                <p><span>año: </span>2022</p>
+                <p>
+                    <span>generos:</span> Fantástico. Acción. Aventuras. Comedia. Romance | Superhéroes. Enfermedad. Cómic. Marvel Comics. MCU. Secuela
+                </p>
+                <p>
+                    <span>rating </span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="verPeliIframe">
+        <div class="container">
+
+            <div class="chapter-list-container" id="ver-aqui">
+                <h3>opciones</h3>
+                <ul class="chapter-list">
+                    <li data-src="https://4embed.top/video/tt10648342/">PeliPlushd</li>
+                    <!-- <li
+                        data-src="https://honeysanime.com/wp-content/uploads/2017/11/Tonari-no-Seki-kun-crunchyroll-1-560x315.jpg">
+                        stream
+                    </li>
+                    <li
+                        data-src="https://honeysanime.com/wp-content/uploads/2017/11/Tonari-no-Seki-kun-crunchyroll-1-560x315.jpg">
+                        stream
+                    </li>
+                    <li
+                        data-src="https://honeysanime.com/wp-content/uploads/2017/11/Tonari-no-Seki-kun-crunchyroll-1-560x315.jpg">
+                        stream
+                    </li>
+                    <li
+                        data-src="https://honeysanime.com/wp-content/uploads/2017/11/Tonari-no-Seki-kun-crunchyroll-1-560x315.jpg">
+                        stream
+                    </li> -->
+                </ul>
+            </div>
+            <div class="video-container">
+                <iframe id="video-iframe" src="https://4embed.top/video/tt10648342/" allowfullscreen
+                    frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- ver pelicula iframe end -->
+
+
+    <!-- footer start -->
+    <div class="footer">
+        <p>tu eres una enferma y este bicho es el unico que te va curar. <span>2082</span></p>
+    </div>
+    <!-- footer end -->
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- link de JavaScript -->
+    <script src="peliculas.js"></script>
+</body>
+
+</html>
