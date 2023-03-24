@@ -1,202 +1,102 @@
-<style>
-    @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
+<!DOCTYPE html>
+<html lang="es">
 
-    :root {
-        --black: #121b24;
-        --light-bg: #1B1F3A;
-        --white: #ffffff;
-        --azul-claro: #1273c7;
-    }
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>busqueda</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="busqueda.css">
+    <!-- link de cdn font awesone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
 
-    * {
-        font-family: "Rubik", sans-serif;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        outline: none;
-        border: none;
-        text-decoration: none;
-        transition: 0.2s linear;
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    }
+<body>
 
-    body {
-        /* background-color: bisque; */
-        background-color: rgba(0, 0, 0, 0.5);
-        padding-top: 70px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        -webkit-user-select: none;
-        /* para navegadores basados en WebKit, como Google Chrome y Safari */
-        -moz-user-select: none;
-        /* para navegadores basados en Gecko, como Firefox */
-        -ms-user-select: none;
-        /* para navegadores basados en Trident, como Internet Explorer y Microsoft Edge */
-        user-select: none;
-        /* para navegadores que soportan la especificación CSS3 */
-    }
-
-    html {
-        font-size: 62.5%;
-        overflow-x: hidden;
-        scroll-behavior: smooth;
-        scroll-padding-top: 8rem;
-    }
-
-    ::-webkit-scrollbar {
-        display: none;
-        /* height: 0.5rem;
-        width: 1rem; */
-    }
-
-    /* ::-webkit-scrollbar-thumb {
-        background-color: var(--azul-claro);
-        border-radius: 5rem;
-    } */
-
-    .movie {
-        display: none;
-    }
-
-    .cajon {
-        max-width: 1400px;
-        margin: 0 auto;
-        background-color: #121b24;
-
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
-        grid-auto-rows: 268px;
-        grid-gap: 10px;
-
-
-    }
-
-    @media (max-width: 1451px) {
-        .cajon {
-            width: auto;
-            margin: 0 0;
-            /* background-color: steelblue; */
-            background-color: #121b24;
-
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
-            grid-auto-rows: 268px;
-            grid-gap: 10px;
-        }
-    }
-
-    .cajon .movie {
-        text-align: center;
-    }
-
-    /* .cajon .movie a {
-        background-color: #1273c7;
-    } */
-    /* padding: 1.5rem; */
-
-    .cajon .movie a p {
-        color: var(--white);
-        font-size: 1.5rem;
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 2;
-        margin-top: .5rem;
-    }
-
-    .cajon .movie a img {
-        width: 160px;
-        height: 225px;
-    }
-
-    input {
-        max-width: 700px;
-        margin: 3rem auto;
-        background: linear-gradient(to bottom, rgba(50, 50, 50, 0.8), rgba(50, 50, 50, 0.8)), url("https://raw.githubusercontent.com/jos3lo89/wallapers-pelis999/main/knndy.png");
-        height: 2rem;
-        width: auto;
-        border-radius: .5rem;
-        padding: 2rem 2rem 2rem 2rem;
-        font-size: 2rem;
-        color: #fff;
-
-        box-shadow: 0px 0px 69px 42px rgba(0, 0, 0, 0.86);
-        -webkit-box-shadow: 0px 0px 69px 42px rgba(0, 0, 0, 0.86);
-        -moz-box-shadow: 0px 0px 69px 42px rgba(0, 0, 0, 0.86);
-    }
-
-    @media (max-width: 900px) {
-        input {
-            height: 3rem;
-            margin: 2rem;
-            width: auto;
-            padding: 2rem 2rem 2rem 2rem;
-            font-size: 1.2rem;
-        }
-    }
-</style>
-
-
-<input type="text" id="search-box" placeholder="Buscar película...">
-
-<div class="cajon">
-    <div class="movie" data-title="joselo">
-        <a href="#">
-            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx1689-hlkAI78WBahK.jpg"
-                alt="Byousoku 5 centímetros" />
-            <p>Byousoku 5 centímetros</p>
-        </a>
+    <div class="barraDeBusqueda">
+        <input type="text" id="search-box" placeholder="Buscar película...">
     </div>
-    <div class="movie" data-title="wadafa">
-        <a href="#">
-            <img src="https://pics.filmaffinity.com/yip_man_4-628068540-mmed.jpg" alt="Ip Man 4" />
-            <p>Ip Man 4</p>
-        </a>
+
+    <div class="cajon">
+        <div class="movie" data-title="joselo">
+
+            <div class="imgContainer">
+                <img src="https://pics.filmaffinity.com/redeeming_love-179355131-large.jpg" alt="">
+                <div class="text-Box">
+                    <h2 class="movieTitle">redeeming love</h2>
+                    <p><span>calidad: </span>HD</p>
+                    <p><span>idioma: </span>latino</p>
+                    <a href="#">ver online
+                        <i class="fa-sharp fa-regular fa-circle-play"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="movie" data-title="wadafa">
+
+            <div class="imgContainer">
+                <img src="https://pics.filmaffinity.com/redeeming_love-179355131-large.jpg" alt="">
+                <div class="text-Box">
+                    <h2 class="movieTitle">redeeming love</h2>
+                    <p><span>calidad: </span>HD</p>
+                    <p><span>idioma: </span>latino</p>
+                    <a href="#">ver online
+                        <i class="fa-sharp fa-regular fa-circle-play"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="movie" data-title="wadafa">
+
+            <div class="imgContainer">
+                <img src="https://pics.filmaffinity.com/redeeming_love-179355131-large.jpg" alt="">
+                <div class="text-Box">
+                    <h2 class="movieTitle">redeeming love</h2>
+                    <p><span>calidad: </span>HD</p>
+                    <p><span>idioma: </span>latino</p>
+                    <a href="#">ver online
+                        <i class="fa-sharp fa-regular fa-circle-play"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="movie" data-title="wadafa">
+
+            <div class="imgContainer">
+                <img src="https://pics.filmaffinity.com/redeeming_love-179355131-large.jpg" alt="">
+                <div class="text-Box">
+                    <h2 class="movieTitle">redeeming love</h2>
+                    <p><span>calidad: </span>HD</p>
+                    <p><span>idioma: </span>latino</p>
+                    <a href="#">ver online
+                        <i class="fa-sharp fa-regular fa-circle-play"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="movie" data-title="wadafa">
+
+            <div class="imgContainer">
+                <img src="https://pics.filmaffinity.com/redeeming_love-179355131-large.jpg" alt="">
+                <div class="text-Box">
+                    <h2 class="movieTitle">redeeming love</h2>
+                    <p><span>calidad: </span>HD</p>
+                    <p><span>idioma: </span>latino</p>
+                    <a href="#">ver online
+                        <i class="fa-sharp fa-regular fa-circle-play"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
     </div>
-    <div class="movie" data-title="wadafa">
-        <a href="#">
-            <img src="https://pics.filmaffinity.com/missing_in_action-291426949-large.jpg" alt="Prisionero de guerra" />
-            <p>Prisionero de guerra</p>
-        </a>
-    </div>
-    <div class="movie" data-title="wadafa">
-        <a href="#">
-            <img src="https://pics.filmaffinity.com/the_hating_game-428971484-mmed.jpg" alt="Cariño, cuánto te odio" />
-            <p>Cariño, cuánto te odio</p>
-        </a>
-    </div>
-    <div class="movie" data-title="wadafa">
-        <a href="#">
-            <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx116589-WSpNedJdAH3L.jpg"
-                alt="86: Eighty Six" />
-            <p>86: Eighty Six</p>
-        </a>
-    </div>
-</div>
 
-<script>
-    const searchBox = document.getElementById('search-box');
-    const movies = document.querySelectorAll('.movie');
+    <script src="busqueda.js"></script>
+</body>
 
-    searchBox.addEventListener('keyup', function (event) {
-        const searchTerm = event.target.value.toLowerCase();
-
-        if (searchTerm === '') {
-            movies.forEach(movie => {
-                movie.style.display = 'none';
-            });
-            return;
-        }
-
-        movies.forEach(movie => {
-            const title = movie.dataset.title.toLowerCase();
-            if (title.includes(searchTerm)) {
-                movie.style.display = 'block';
-            } else {
-                movie.style.display = 'none';
-            }
-        });
-    });
-
-</script>
+</html>

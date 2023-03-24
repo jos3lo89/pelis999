@@ -310,37 +310,6 @@ section {
     color: #fff;
 }
 
-/* .swiper-slide-jl .link-ver {
-    padding: 1rem;
-    border: none;
-    background-color: var(--azul-claro);
-    border-radius: 2rem;
-    font-size: 2rem;
-    color: var(--white);
-    margin-left: 2rem;
-} */
-
-/* boton ver start */
-/* .btn-ver {
-    font-size: 1.5rem;
-    color: #ffffff;
-    background-color: var(--azul-claro);
-    padding: 2rem 2rem;
-    border-radius: 10px;
-    display: flex;
-    width: 16rem;
-
-}
-
-.btn-ver:hover {
-    transform: scale(1.1);
-    background-color: #351a8e;
-}
-
-.btn-ver i {
-    font-size: 2rem;
-    margin-left: 1rem;
-} */
 .btn-ver {
     font-size: 1.5rem;
     color: #ffffff;
